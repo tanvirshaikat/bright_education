@@ -1,0 +1,429 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    h1{
+        font-size: 22px !important;
+    }
+    h3{
+        font-size: 18px !important;
+    }
+    p{
+        font-size: 14px !important;
+    }
+
+    nav.navbar.bootsnav{
+        background: #fff;
+    }
+    .top-logo img{
+        height: 40px;
+        margin-top: 5px;
+    }
+    nav.navbar.bootsnav .navbar-nav > li{
+        background: #caa83e;
+        text-align: center;
+    }
+    .top-logo img{
+        height: 75px;
+        margin-top: 0px;
+        padding-bottom: 8px;
+    }
+    .top-header span{
+        color: #FFF;
+    }
+    .pright{
+        float: none;
+        text-align: center;
+        background: #063553;
+        padding: 10px;
+    }
+    #cslider .carousel-caption{
+        bottom: 50px;
+        left: 15%;
+        text-align: left;
+    }
+    .carousel-indicators{
+        bottom: 0px;
+        margin-bottom: 0px;
+    }
+    #cslider .carousel-indicators li{
+        background-color: rgb(198, 161, 47);
+        border: 2px solid #fff;
+    }
+    #cslider .carousel-indicators .active{
+        background: #063553;
+    }
+    .edu img{
+        width: 100%;
+    }
+
+    /*################==============#########*/
+
+    /*              RPL Page             */ 
+
+    /*##############================################*/
+
+    .rplflexbox{
+        width: 48%;
+        margin-right: 4%;
+        margin-bottom: 4%;
+    }
+    .rplflexbox:nth-child(2n+2){
+        margin-right: 0px;
+    }
+
+    .teamwrap{
+        justify-content: space-around;   
+    }
+
+}
+
+
+
+/*		Mobile Layout: 320px.
+                Gutters: 24px.
+                Outer margins: 34px.
+                Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (min-width: 420px) and (max-width: 767px) {
+
+    h1{
+        font-size: 16px !important;
+    }
+    h3{
+        font-size: 16px !important;
+        margin: 0px;
+    }
+    p{
+        font-size: 12px !important;
+        margin: 0px;
+    }
+
+
+
+    nav.navbar.bootsnav{
+        background: #fff;
+    }
+    .top-logo img{
+        height: 40px;
+        margin-top: 5px;
+    }
+    nav.navbar.bootsnav .navbar-nav > li{
+        background: #caa83e;
+        text-align: center;
+    }
+
+
+    #cslider .carousel-caption{
+        bottom: 10px;
+        left: 15%;
+        text-align: left;
+    }
+    #cslider .carousel-caption button{
+        font-size: 11px;
+        padding: 1px 4px;
+    }
+    .carousel-indicators{
+        bottom: 0px;
+        margin-bottom: 0px;
+    }
+    #cslider .carousel-indicators li{
+        background-color: rgb(198, 161, 47);
+        border: none;
+    }
+    #cslider .carousel-indicators .active{
+        background: #063553;
+    }
+    .top-headline p{
+        padding-bottom: 5px;   
+    }
+    .fbox{
+        justify-content: center;
+    }
+    .fbox div{
+        flex-basis:33.33%;
+    }
+    .fbox div:nth-of-type(4){
+        flex-basis:50%;
+    }
+    .fbox div:nth-of-type(5){
+        flex-basis:50%;
+    }
+    .rpl-hover-box{
+        padding: 40px 15px;
+    }
+    .extra-shadwo {
+        border-right: 100px solid rgba(6, 53, 83, 0.29);
+        border-left: 100px solid rgba(0, 188, 212, 0);
+        border-top: 100px solid rgba(255, 235, 59, 0);
+        border-bottom: 100px solid rgba(6, 53, 83, 0.29);
+    }
+    .edu img{
+        width: 100%;
+    }
+    #educont-slider h3{
+        margin-top: 20px;
+    }
+    .flogo  img{
+        width: 60%;
+    }
+    .fadd{
+        margin-bottom: 30px;
+    }
+    .footerbox{
+        margin-bottom: 30px;
+    }
+    .footerbox:last-child{
+        margin-bottom: 10px;
+    }
+    .fsocial{
+        margin-top: 12px;
+    }
+    .smallfooter{
+        text-align: center;
+    }
+    .smallfooter p{
+        padding: 5px;
+        float: left !important;
+    }
+
+    /*################==============#########*/
+
+    /*              RPL Page             */ 
+
+    /*##############================################*/
+
+    .rplflexbox{
+        width: 48%;
+        margin-right: 4%;
+        margin-bottom: 4%;
+    }
+    .rplflexbox:nth-child(2n+2){
+        margin-right: 0px;
+    }
+    .teamwrap{
+        justify-content: space-around;   
+    }
+
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+                Gutters: 24px.
+                Outer margins: 22px.
+                Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width:360px) and (max-width: 419px) {
+    h1{
+        font-size: 20px !important;
+    }
+    h3{
+        font-size: 14px !important;
+        margin: 0px;
+    }
+    p{
+        font-size: 11px !important;
+        margin: 0px;
+    }
+    nav.navbar.bootsnav{
+        background: #fff;
+    }
+    .top-logo img{
+        height: 40px;
+        margin-top: 5px;
+    }
+    nav.navbar.bootsnav .navbar-nav > li{
+        background: #caa83e;
+        text-align: center;
+    }
+    #cslider .carousel-caption{
+        bottom:0px;
+        left: 15%;
+        text-align: left;
+    }
+    #cslider .carousel-caption button{
+        font-size: 11px;
+        padding: 1px 4px;
+    }
+    .carousel-indicators{
+        bottom: 0px;
+        margin-bottom: 0px;
+    }
+    #cslider .carousel-indicators li{
+        background-color: rgb(198, 161, 47);
+        border: none;
+    }
+    #cslider .carousel-indicators .active{
+        background: #063553;
+    }
+    .fbox{
+        justify-content: center;
+    }
+    .fbox div{
+        flex-basis:50%;
+    }
+    .rpl-box span{
+        left: 44%;
+    }
+    .rpl-hover-box{
+        padding: 45px 15px !important;
+    }
+    .rpl-hover-box button{
+        padding: 2px 5px !important;
+        margin: 8px !important;
+        font-size: 12px;
+    }
+    .rpl-box span i{
+        font-size: 17px;
+        height: 45px;
+        width: 45px;
+        padding: 13px 0px;
+    }
+    .extra-shadwo {
+        border-right: 100px solid rgba(6, 53, 83, 0.29);
+        border-left: 100px solid rgba(0, 188, 212, 0);
+        border-top: 100px solid rgba(255, 235, 59, 0);
+        border-bottom: 100px solid rgba(6, 53, 83, 0.29);
+    }
+    .top-headline p{
+        padding-bottom: 5px;   
+    }
+
+    #educont-slider h3{
+        margin-top: 20px;
+    }
+    .flogo  img{
+        width: 60%;
+    }
+    .fadd{
+        margin-bottom: 30px;
+    }
+    .footerbox{
+        margin-bottom: 30px;
+    }
+    .footerbox:last-child{
+        margin-bottom: 10px;
+    }
+    .fsocial{
+        margin-top: 12px;
+    }
+    .smallfooter{
+        text-align: center;
+    }
+    .smallfooter p{
+        padding: 5px;
+        float: left !important;
+    }
+    /*################==============#########*/
+
+    /*              RPL Page             */ 
+
+    /*##############================################*/
+
+    .rplflexbox{
+        width: 98%;
+        margin-right: 2%;
+        margin-bottom: 4%;
+    }
+    .teamwrap{
+        justify-content: space-around;   
+    }
+
+
+}
+
+
+@media only screen and (max-width: 359px) {
+    h1{
+        font-size: 20px !important;
+    }
+    h3{
+        font-size: 13px !important;
+        margin: 0px;
+    }
+    p{
+        font-size: 11px !important;
+        margin: 0px;
+    }
+
+
+    nav.navbar.bootsnav{
+        background: #fff;
+    }
+    .top-logo img{
+        height: 40px;
+        margin-top: 5px;
+    }
+    nav.navbar.bootsnav .navbar-nav > li{
+        background: #caa83e;
+        text-align: center;
+    }
+    .top-header span{
+        font-size: 13px;
+        padding: 3px 8px;
+    }
+    nav.navbar.bootsnav{
+        margin-top: 0px;
+    }
+
+    #cslider .carousel-caption{
+        bottom: 0px;
+        left: 15%;
+        text-align: left;
+    }
+    #cslider .carousel-caption button{
+        font-size: 11px;
+        padding: 1px 4px;
+    }
+    .carousel-indicators{
+        bottom: 0px;
+        margin-bottom: 0px;
+    }
+    #cslider .carousel-indicators li{
+        background-color: rgb(198, 161, 47);
+        border: none;
+    }
+    #cslider .carousel-indicators .active{
+        background: #063553;
+    }
+    .fbox{
+        justify-content: center;
+    }
+    .fbox div{
+        flex-basis:50%;
+    }
+    .fbox div:last-child{
+        flex-basis:100%;
+    }
+
+    .rpl-hover-box{
+        padding: 30px 15px !important;
+    }
+    .rpl-hover-box button{
+        padding: 0px 5px !important;
+        margin: 0px !important;
+        font-size: 12px;
+    }
+    .rpl-box span i{
+        font-size: 18px;
+        height: 40px;
+        width: 40px;
+        padding: 11px 0px;
+    }
+    .extra-shadwo{
+        border-right: 100px solid rgba(6, 53, 83, 0.29);
+        border-left: 100px solid rgba(0, 188, 212, 0);
+        border-top: 80px solid rgba(255, 235, 59, 0);
+        border-bottom: 80px solid rgba(6, 53, 83, 0.29);
+    }
+
+    .teamwrap{
+        justify-content: space-around;   
+    }
+
+
+}

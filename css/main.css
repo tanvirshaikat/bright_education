@@ -1,0 +1,1290 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans:300,300i,400,600,600i,700,800|Raleway:100,200,400,600,700,800|Roboto");
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*ALL Default Style*/
+a:hover{
+    text-decoration: none;
+}
+
+a:focus {
+    color: #ffffff;
+    text-decoration: none;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+/*TOP SECTION*/
+@media only screen and (min-width: 1024px) {
+
+    header{
+        background: #063553;
+    }
+    .cstcontent{
+        width: 970px;
+        margin: 0 auto;
+    }
+    .top-header{
+
+    }
+    .top-logo{
+        background: #fffde8;
+	position: absolute;
+	top: -53px;
+	height: 110px;
+	padding: 10px 30px;
+	left: 0px;
+    }
+    .top-logo img{
+        height: 90px;
+    }
+    .bg-col{
+        background: #063553 !important;
+    }
+    .bg-col a{
+        border: 1px solid #c6a12f;
+        padding: 18px 19px 17px!important;
+        margin-top: 2px;
+    }
+}
+
+.top-header span{
+    background: transparent;
+    color: #c6a12f;
+    font-size: 20px;
+    margin: 0;
+    padding: 7px 10px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.top-header span:hover{
+    background: #c6a12f;
+    color: #fffde8;
+}
+.ptb15{
+    padding: 15px 0;
+}
+.ptb5{
+    padding: 5px 0;
+}
+.pright{
+    float: right;
+}
+
+
+nav.navbar.bootsnav ul.nav > li > a:hover{
+    background: #063553 !important;
+}
+
+
+/*SLIDER*/
+@media only screen and (min-width: 1024px) {
+    #cslider .carousel-indicators{
+        position: absolute;
+        bottom: 15em;
+        right: 0%;
+        left: 85%;
+        z-index: 15;
+        width: 0%;
+        padding-left: 0;
+        margin-left: 0%;
+        text-align: center;
+        list-style: none;
+    }
+
+    #cslider .carousel-indicators li{
+        display: block;
+        width: 12px;
+        height: 12px;
+        margin: 4px 0;
+        text-indent: -999px;
+        cursor: pointer;
+        background-color: #000\9;
+        background-color: rgb(198, 161, 47);
+        border: 2px solid #fff;
+        border-radius: 12px;
+    }
+    #cslider .carousel-indicators .active{
+        margin: 4px 0 !important;
+        width: 12px;
+        height: 12px;
+        background: #063553;
+    }
+
+}
+
+#cslider .carousel-caption{
+    bottom: 100px;
+    left: 15%;
+    text-align: left;
+}
+#cslider .carousel-caption h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    animation: zoomIn;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+
+
+}
+#cslider .carousel-caption p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    animation: lightSpeedIn;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+}
+#cslider .carousel-caption button{
+    border-radius: 0px;
+    padding: 3px 15px;
+    background: #c6a12f;
+    border: 1px solid #FFF;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    animation: slideInUp;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-in-out;
+}
+#cslider .carousel-caption button:hover{
+    background-color: #063553;
+    color: #FFF;
+}
+
+
+/*Feature*/
+
+.feature{
+    border-top: 2px solid #ffd041;
+    background: #063553 url(../img/bg-1.png) center;
+    background-position: 100%;
+    background-size: contain;
+}
+
+.fbox{
+    display: flex;
+    flex-wrap:wrap;
+}
+.fbox div{
+    flex-basis: 20%;
+    box-sizing: border-box;
+    border-right: 2px solid #fff;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding-top: 15px;
+}
+.fbox div:last-of-type{
+    border-right: none;
+}
+.fbox div h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    background: #c6a12f;
+    padding: 7px 0px;
+}
+.fbox div:hover img{
+    animation: bounce;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+.fbox div:hover h3{
+    background-color: #063553;
+}
+
+/*RPL*/
+
+.rpl-bg{
+    background-image: url(../img/rpl-bg.jpg);
+    background-attachment: fixed;
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-headline{
+    border-bottom: 2px solid #063553;
+    font-family: 'Open Sans', sans-serif;
+    margin: 50px 0px;
+    position: relative;
+}
+.top-headline h1{
+    font-size: 28px;
+    color: #151924;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.headline-icon{
+    position: absolute;
+    right: 0;
+    bottom:0;
+}
+.top-headline:hover .headline-icon img{
+    animation: wobble;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.rpl-box{
+    border: 1px solid #063553;
+    margin-bottom: 50px;
+    position: relative;
+}
+.rpl-box img{
+    width: 100%;
+}
+.rpl-box span{
+    position: absolute;
+    top: -25px;
+    left: 46%;
+    text-align: center;
+    z-index: 12121212;
+}
+.rpl-box span i{
+    border-radius: 50%;
+    border: 1px solid #063553;
+    font-size: 28px;
+    background: #fff;
+    height: 60px;
+    width: 60px;
+    padding: 15px 0px;
+    color: #063553;
+}
+
+.rpl-box-title{
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+}
+.rpl-box-title h3{
+    margin: 0;
+    background: rgba(255, 255, 255, 0.78);
+    padding: 8px 15px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 700;
+    color: #063553;
+}
+.rpl-hover-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(198, 161, 47, 0.93);
+    z-index: 10000;
+    top: 0;
+    padding: 80px 15px;
+    text-align: center;
+    display: none;
+}
+.rpl-hover-box p{
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    z-index: 555555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.rpl-hover-box button{
+    border: 1px solid #FFF;
+    padding: 5px 15px;
+    background: transparent;
+    margin-top: 20px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.3s ease-in;
+}
+.rpl-hover-box button:hover{
+    background: #063553;
+}
+
+/*BOX HOVER effect*/
+.rpl-box:hover{
+    border: 1px solid #fff;
+}
+.rpl-box:hover .rpl-box-title{
+    display: none;
+}
+.rpl-box:hover span > i{
+    border: 2px solid #fff;
+    background: #d8bf71;
+    color: #FFF;
+    animation: pulse ease-in 0.3s;
+}
+.rpl-box:hover .rpl-hover-box{
+    display: block;
+}
+
+
+
+
+/*Education*/
+
+.edu{
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+}
+.extra-shadwo{
+    position: absolute;
+    bottom: 0;
+    border-right: 150px solid rgba(6, 53, 83, 0.29);
+    border-left: 150px solid rgba(0, 188, 212, 0);
+    border-top: 150px solid rgba(255, 235, 59, 0);
+    border-bottom: 150px solid rgba(6, 53, 83, 0.29);
+    right: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#edu-slider{}
+
+#educont-slider{
+    border-top: 5px solid #c6a12f;
+    border-bottom: 3px solid #c6a12f;
+    text-align: justify;
+    min-height: 338px;
+    overflow: hidden;
+    height: 338px;
+}
+#educont-slider h3{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #063553;
+}
+#educont-slider p{
+    margin: 15px 0px;
+    padding: 0px;
+    line-height: 22px;
+    color: #414f58;
+    height: 200px;
+    overflow: hidden;
+}
+#educont-slider button{
+    border: 0px;
+    padding: 8px 20px;
+    color: #fff;
+    background: #c6a12f;
+    transition: 0.3s all ease;
+}
+#educont-slider button:hover{
+    background: #063553;
+}
+
+/*IELTS/PTE*/
+
+
+.ielts{
+    padding-bottom: 35px;
+    background: #fff;
+}
+
+.ie-box{
+    border: 3px solid #c6a12f;
+    text-align: center;
+    background: #fffde8;
+    padding: 26px 0;
+}
+.ie-box h3{
+    font-family: 'Open Sans', sans-serif;
+    color: #c6a12f;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+.ie-box:hover{
+    background: transparent;
+    border: 3px solid #063553;
+}
+.ie-box:hover h3{
+    color: #063553;
+}
+
+
+/*Migration*/
+
+.migr-bg{
+    background-image: url(../img/rpl-bg.jpg);
+    background-attachment: fixed;
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.migr-box{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+.migr-box i{
+    border: 1px solid #c6a12f;
+    height: 60px;
+    width: 60px;
+    padding: 20px 0;
+    font-size: 20px;
+    border-radius: 50%;
+    color: #c6a12f;
+    background: #fff;
+}
+.migr-box h3{
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 35px;
+    letter-spacing: 1px;
+}
+
+.migr-box:hover i{
+    border: 1px solid #063553;
+    color: #fff;
+    background: #063553;
+    box-shadow: 0px 0px 0px 5px #d0c8c8;
+}
+
+/*Partner Icon*/
+
+.prtn{
+    margin-bottom: 35px;
+    background: #fff;
+}
+.prtn-icon{
+    text-align: center;
+}
+
+.owl-carousel .item{
+    padding: 0px 30px;
+}
+
+
+/*################################
+
+********** Foooter **************
+
+#################################*/
+
+footer{
+    background-image: url(../img/rpl-bg.jpg);
+    background-attachment: fixed;
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+}
+.flogo{
+    text-align: center;
+    margin-top: 20px;
+}
+.flogo  img{
+    width: 85%;
+}
+
+.fadd{
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    margin-left: 16px;
+}
+
+.fadd span:nth-child(2n+1){
+    width: 8%;
+    margin-top: 10px;
+    margin-right: 4px;
+    font-size: 12px;
+}
+.fadd span:nth-child(2n+2){
+    width: 90%;
+    margin-top: 8px;
+}
+.fadd span i{
+    color: #063553;
+    font-size: 16px;
+}
+.footerbox h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 3px solid #c6a12f;
+    color: #063553;
+    padding-bottom: 6px;
+}
+
+
+.fsocial div{
+    border: 1px solid;
+    display: flex;
+    text-align: center;
+    padding: 13px 15px;
+    margin-bottom: 4px;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+
+}
+.fsocial div span:nth-of-type(1){
+    flex: 2;
+    border-right: 1px solid;
+}
+.fsocial div span:nth-of-type(2){
+    flex: 10;
+}
+.fsocial a:nth-of-type(1) div{
+    background: #dc4b3a;
+}
+.fsocial a:nth-of-type(2) div{
+    background: #3b5999;
+}
+.fsocial a:nth-of-type(3) div{
+    background: #00acee;
+}
+.fsocial a:nth-of-type(4) div{
+    background: #0e76a9;
+}
+
+.footerbox h5{
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    color: #a7a7a7;
+    border-bottom: 1px solid rgba(6, 53, 83, 0.11);
+    padding-bottom: 15px;
+}
+.footerbox h5 a{
+    color: #a7a7a7;
+}
+.footerbox h5 a:hover{
+    color: #063553;
+    font-weight: 600;
+}
+.footerbox h5 i{
+    color: rgb(198, 161, 47);
+    font-size: 11px;
+    margin-right: 3px;
+}
+
+.footerbox .btn {
+    border: 0px;
+    background: #c6a12f;
+    border-radius: 0px;
+    margin-bottom: 5px;
+    padding: 5px 12px;
+}
+.footerbox .btn a{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+.footerbox .btn:hover{
+    background: #063553;
+}
+
+.smallfooter{
+    background: #0f304c;
+    color: #FFF;
+}
+.smallfooter p{
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    padding: 15px 0px;
+    color: #fff;
+}
+.smallfooter p > a{
+    font-family: 'Lato', sans-serif;
+    color: #c6a12f;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.smallfooter p > a:hover{
+    color: #fff;
+}
+
+
+/*##################################============================#######################*/
+
+/*                            ABOUT,Deatails Page                                       */ 
+
+/*##################################============================#######################*/
+
+.acover{
+    position: relative;
+}
+.acover img{
+    width: 100%;
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #063553;
+    opacity: 0.3;
+    filter: alpha(opacity=70);
+}
+
+main{
+    background: #eee;
+}
+.ahnav p{
+    margin: 0;
+    padding: 15px 15px;
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 4px;
+    word-spacing: 1px;
+}
+.ahnav p a{
+    color: #c6a12f;
+}
+
+.acntn{
+    margin-top: 25px;
+    padding-bottom: 25px;
+}
+
+.abg{
+    background: #fff;
+    box-shadow: -3px 5px 8px -25px;
+    border-radius: 4px;
+}
+.ahed h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 20px 15px;
+    color: #063553;
+    border-bottom: 1px solid #c6a12f;
+    margin-bottom: 0px;
+}
+.ahed hr{
+    display: block;
+    height: 0px;
+    border: 0;
+    border-top: 1px solid #063553;
+    padding: 0;
+    margin-top: 3px;
+    width: 95%;
+    text-align: center;
+}
+
+.aartcl{
+    line-height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+}
+.aimg{
+    border-left: 15px solid rgba(198, 161, 47, 0.68);
+    border-bottom: 15px solid rgba(6, 53, 83, 0.43);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px -6px;
+    border-radius: 17px 0 17px 0px;
+    margin-bottom: 20px;
+}
+.aimg img{
+    width: 100%;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.aartcl h3,p {
+    margin: 0 0 10px 0;
+}
+.aartcl p {
+    text-align: justify;
+}
+
+.abg{
+    background: #fff;
+}
+.team-head h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    margin: 0;
+    padding: 20px 15px;
+    color: #063553;
+    text-align: center;
+}
+
+.teamwrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.teamwrap > div{
+    margin: 25px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.teamwrap > div > div{
+    padding: 15px 0;
+    background: #FFF;
+}
+.teamwrap > div > div > h3{
+    margin: 0px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #d8bf71;
+}
+.teamwrap > div:hover img{
+    box-shadow: 0 30px 53px -15px rgba(6, 53, 109, 0.32);
+    animation: zoomIn ease 1s;
+}
+
+.t-icon{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.t-icon > span{
+    border: 1px solid #ecddae;
+    padding: 3px 7px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #063553;
+    margin-right: 10px;
+}
+.t-icon > span:first-child{
+    padding: 3px 8px;
+}
+/*##################################============================#######################*/
+
+/*                            RPL Page                                       */ 
+
+/*##################################============================#######################*/
+
+
+.rpl-p{
+    padding: 25px 0px;
+}
+
+.flex-cntn{
+    display: flex;
+    flex-wrap:wrap;
+}
+@media only screen and (min-width: 1024px) {
+    .rplflexbox{
+        width: 32%;
+        padding: 5px;
+        font-family: 'Open Sans', sans-serif;
+        color: #063553;
+        margin-right: 2%;
+        margin-bottom: 2%;
+    }
+    .rplflexbox:nth-child(3n+3){
+        margin-right: 0px;
+    }  
+}
+.rplflexbox:hover .boxicon{
+    background: #c6a12f;
+    color: #fff;
+    animation: pulse ease-in 0.3s;
+}
+
+.rplflexbox img{
+    width: 100%;
+}
+.rplflexcntn{
+    padding: 10px 15px;
+    margin: 0px;
+    background: #f6f6f6;
+    border-radius: 0 0 4px 4px;
+    position: relative;
+}
+.boxicon{
+    position: absolute;
+    right: 25px;
+    top: -20px;
+    background: rgb(15, 48, 76);
+    padding: 7px 10px;
+    color: #c6a12f;
+}
+
+.rplflexcntn h3{
+    text-transform: uppercase;
+    margin: 0;
+    color: #c6a12f;
+}
+.rplflexbox a span{
+    border: 1px solid;
+    padding: 5px 10px;
+    background: transparent;
+    color: #c6a12f;
+    transition: 0.4s ease-in;
+}
+.rplflexbox a:hover span{
+    background: #063553;
+    color: #fff;
+}
+/*PROMOTION*/
+.promo .thumbnail{
+    position: relative;
+    padding: 0px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    margin-right: 12px;
+    border: 1px solid #ffffff;
+    border-radius: 0;
+}
+.promo .col-md-4:nth-child(3n+3) .thumbnail{
+    margin-right: 0px;
+}
+.promo .thumbnail h3{
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    background: rgba(6, 53, 83, 0.67);
+    margin: 0px;
+    padding: 10px 15px;
+    border-radius: 0px 4px 4px 0px;
+    color: #efce68;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.2s ease;
+}
+.promo .thumbnail h3:hover{
+    color: #fff;
+    background: rgba(198, 161, 47, 0.93);
+}
+
+.modal-open .modal{
+    z-index: 10000000;
+}
+.table{
+    font-family: 'Roboto', sans-serif;
+}
+.table thead{
+    text-transform: uppercase;
+    background: #efce68;
+    color: #145d8c;
+}
+.table tbody tr td:nth-of-type(4){
+    text-align: center;
+}
+.table tbody tr td:nth-of-type(4) a{
+    padding: 7px 10px;
+    margin: 0px;
+    border-radius: 2px;
+    color: #efce68;
+    text-transform: capitalize;
+    background: #145d8c;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Contact Page*/
+
+.contact-head{
+    background: #fff;
+    padding: 15px 0px;
+    margin: 25px 0;
+    border-radius: 4px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.contact-head > h1{
+    margin: 0px;
+    color: #063553;
+}
+.contact-head > p{
+    margin: 0px;
+    color: #063553;
+}
+.contact-head p{
+    margin-top: 6px;
+    font-size: 13px;
+    color: rgb(198, 161, 47);
+}
+
+.contact-form{
+    margin-bottom: 25px;   
+}
+
+.contact-form .form-control{
+    background: #fdfdfe;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid #ececec;
+    border-radius: 0px;
+    outline: none;
+    margin-top: 20px;
+    padding-left: 20px;
+    color: #8C8C8C;
+    box-shadow: none;
+    height: 50px;
+}
+.contact-form textarea{
+    height: 200px !important;
+}
+.contact-form > form > button{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    background: #063553;
+    color: #c6a12f;
+    padding: 12px 15px 12px 29px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    position: relative;
+    margin-top: 20px;
+}
+.contact-form > form > button > i{
+    padding-left: 10px;
+    border-left: 1px solid #868686;
+    margin-left: 10px;
+}
+
+.cont-address{
+    border-left: 2px solid #c6a12f;
+    margin-top: 20px;
+    padding-left: 39px;
+    background: rgba(253, 253, 254, 0.7);
+    min-height: 410px;
+    padding-top: 35px;
+    position: relative;
+    z-index: 99;
+    border-radius: 0px 4px 4px 0px;
+}
+.c-address{
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px 0;
+    border-bottom: 1px solid #dce9f1;
+}
+.c-address > div > i{
+    font-size: 70px;
+    color: #c6a12f;
+}
+.c-email{
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    padding: 35px 0;
+    border-bottom: 1px solid #dce9f1;
+}
+.c-email > div > i{
+    font-size: 60px;
+    color: #c6a12f;
+}
+.c-mobile{
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px 0;
+    margin-top: 15px;
+}
+.c-mobile > div > i{
+    font-size: 60px;
+    color: #c6a12f;
+}
+.c-address > div:first-child{
+    flex:1;
+}
+.c-address > div:last-child{
+    flex:3;
+}
+.c-email > div:first-child{
+    flex:1;
+}
+.c-email > div:last-child{
+    flex:3;
+}
+.c-mobile > div:first-child{
+    flex:1;
+}
+.c-mobile > div:last-child{
+    flex:3;
+}
+
+
+/*##################################============================#######################*/
+
+/*                            Our Teacher Page                                       */ 
+
+/*##################################============================#######################*/
+
+.ts-head{
+    margin-top: 20px;
+    background: #fff;
+}
+.ts-head h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    margin: 0;
+    padding: 20px 15px;
+    color: #063553;
+    text-align: center;
+}
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
