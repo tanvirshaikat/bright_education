@@ -1,9 +1,9 @@
 <?php 
 
 $db['db_host']= "localhost";
-$db['db_user']= "bright_education";
-$db['db_pass']= "bright_education";
-$db['db_name']= "bright_education";
+$db['db_user']= "";
+$db['db_pass']= "";
+$db['db_name']= "";
 
 foreach ($db as $key => $value) {
 	define(strtoupper($key), $value);
